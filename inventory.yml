@@ -1,0 +1,11 @@
+server:
+  port: 8080
+  
+spring:
+  application:
+    name: inventory
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
