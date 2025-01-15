@@ -1,10 +1,6 @@
 server:
-  port: 8088
+  port: 8080
   
-spring:
-  application:
-    name: inventory
-
 eureka:
   client:
     register-with-eureka: true
