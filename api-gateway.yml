@@ -14,3 +14,15 @@ spring:
           uri: lb://customer
           predicates:
             - Path=/customer/**
+
+          - id: order
+          uri: lb://order
+          predicates:
+            - Path=/order/**
+
+            - id: inventory
+          uri: lb://inventory
+          predicates:
+            - Path=/inventory/**
+
+
