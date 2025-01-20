@@ -5,20 +5,3 @@ eureka:
   client:
     register-with-eureka: true
     fetch-registry: true
-
-spring:
-  cloud:
-    gateway:
-      routes:
-        - id: order
-          uri: lb://service-one
-          predicates:
-            - Path=/order/**
-
-        - id: inventory
-          uri: lb://service-two
-          predicates:
-            - Path=/inventory/**
-
-      default-filters:
-        - RewritePath=/service-(?<segment>.*)/(?<path>.*), /${path}
