@@ -22,4 +22,9 @@ spring:
           predicates:
             - Path=/inventory/**
 
+          - id: auth
+          uri: lb://auth-server
+          predicates:
+            - Path=/auth/**
+
 
