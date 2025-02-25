@@ -2,7 +2,8 @@ eureka:
   client:
     register-with-eureka: true
     fetch-registry: true
-spring:  
+spring:
+  application:
     security:
       recaptcha:
         verifyUrl: https://www.google.com/recaptcha/api/siteverify
