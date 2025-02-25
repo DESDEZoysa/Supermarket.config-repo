@@ -24,5 +24,10 @@ spring:
           uri: lb://inventory
           predicates:
             - Path=/inventory/**
+        
+        - id: auth-server
+          uri: lb://auth-server
+          predicates:
+            - Path=/auth/**
 
 
