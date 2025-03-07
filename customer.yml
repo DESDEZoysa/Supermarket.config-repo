@@ -8,9 +8,9 @@ eureka:
 
 spring:
   datasource:
-    username: local
-    password: local
-    url: local
+    username: postgres
+    password: admin
+    url: jdbc:postgresql://localhost:5432/supermarket
   jpa:
     hibernate:
       ddl-auto: update
