@@ -6,11 +6,11 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
 
-spring:
-  datasource:
-    username: postgres
-    password: admin
-    url: jdbc:postgresql://localhost:5432/supermarket
-  jpa:
-    hibernate:
-      ddl-auto: update
+# spring:
+#   datasource:
+#     username: postgres
+#     password: admin
+#     url: jdbc:postgresql://localhost:5432/supermarket
+#   jpa:
+#     hibernate:
+#       ddl-auto: update
