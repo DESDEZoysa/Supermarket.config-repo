@@ -11,6 +11,6 @@ spring:
     producer:
       bootstrap-servers: localhost:9090
       keySerializer: org.apache.kafka.common.serialization.StringSerializer
-      value-serializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
     topic:
       new_order: new_order
