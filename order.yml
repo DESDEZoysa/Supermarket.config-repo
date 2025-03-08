@@ -5,3 +5,10 @@ eureka:
   client:
     register-with-eureka: true
     fetch-registry: true
+
+spring:
+  kafka:
+    producer:
+      bootstrap-servers: localhost:9090
+      keySerializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonDeserializer
