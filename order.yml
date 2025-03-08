@@ -14,3 +14,4 @@ spring:
       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
     topic:
       new_order: new_order
+      fail_order: fail_order
