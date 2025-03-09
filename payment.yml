@@ -6,3 +6,12 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
 
+  spring:
+    kafka:
+      producer:        
+        keySerializer: org.apache.kafka.common.serialization.StringDeserializer
+        value-serializer: org.springframework.kafka.support.serializer.JsonDeSerializer     
+      topic:
+        new_order: new_order
+        fail_order: fail_order
+
