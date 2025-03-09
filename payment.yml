@@ -8,9 +8,15 @@ eureka:
 
   spring:
     kafka:
-      producer:        
+      consumer:        
         keySerializer: org.apache.kafka.common.serialization.StringDeserializer
-        value-serializer: org.springframework.kafka.support.serializer.JsonDeSerializer     
+        value-serializer: org.springframework.kafka.support.serializer.JsonDeSerializer
+        group-id: payment_group
+        auto-offset-reset: earliest
+        attempts: 4
+        delay: 6000
+        multiplier: 2
+        maxDelay: 100000
       topic:
         new_order: new_order
         fail_order: fail_order
