@@ -5,3 +5,18 @@ eureka:
   client:
     register-with-eureka: true
     fetch-registry: true
+
+spring:
+  kafka:
+    consumer:        
+      keySerializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonDeSerializer
+      group-id: inventory_group
+      auto-offset-reset: earliest
+      attempts: 4
+      delay: 6000
+      multiplier: 2
+      maxDelay: 100000
+    topic:
+      new_order: new_order
+      fail_order: fail_order
