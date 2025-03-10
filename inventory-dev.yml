@@ -4,7 +4,7 @@ spring:
     password: admin
     url: jdbc:postgresql://localhost:5432/supermarket
   kafka:
-    producer:
+    consumer:
       bootstrap-servers: localhost:9090
   jpa:
     hibernate:
