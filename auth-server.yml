@@ -14,7 +14,7 @@ spring:
           access: 600000
   datasource:
     username: postgres
-    password: admin
+    password: eranga@123
     url: jdbc:postgresql://localhost:5432/supermarket
   jpa:
     hibernate:
